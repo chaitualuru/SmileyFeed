@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
 var request = new XMLHttpRequest();
 
 // specify the HTTP method, URL, and asynchronous flag
-request.open('GET', 'http://miley.djroomba.com', true);
+request.open('GET', 'http://miley.djroomba.com/kaluru', true);
 
 // add an event handler
 request.addEventListener('load', function(e){
