@@ -4,7 +4,8 @@
 */
 
 // This code will be executed when the page finishes loading
-window.addEventListener('load', function(){
+$(document).ready(function(){
+$("#start").click(function(){
     // Fill me in!
     // create a request object
 var request = new XMLHttpRequest();
@@ -29,3 +30,5 @@ request.send(null);
 }, false);
 
 // Add more supporting code here!
+});
+
