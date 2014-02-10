@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'bkerville';
+  src: url("../fonts/new_baskerville_bt-webfont.eot") format("eot"), url("../fonts/new_baskerville_bt-webfont.woff") format("woff"), url("../fonts/new_baskerville_bt-webfont.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'ak-gro-1';
+  src: url("../fonts/bertholdakzidenzgroteskbelightextended-webfont.eot") format("eot"), url("../fonts/bertholdakzidenzgroteskbelightextended-webfont.woff") format("woff"), url("../fonts/bertholdakzidenzgroteskbelightextended-webfont.ttf") format("truetype"); }
+
+/*The general width of the layout; scrollbars will appear if window is less wide.*/
+body {
+  min-width: 1040px; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ------------------------------------------------------------------------------- */
+div#header_wrapper {
+  text-align: center;
+  min-width: 960px;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+
+div#main_container {
+  position: fixed;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px; }
+
+#start_container {
+  text-align: center;
+  float: left;
+  position: relative;
+  left: 30px;
+  display: inline-block;
+  top: 355px;
+  width: 27%; }
+
+#tweet_container {
+  float: left;
+  background-color: #3472a1;
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  top: 180px;
+  height: 410px;
+  border: 2px solid red;
+  overflow-y: auto; }
+
+#stop_container {
+  position: relative;
+  right: 30px;
+  display: inline-block;
+  text-align: center;
+  top: 355px;
+  width: 27%; }
