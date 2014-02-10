@@ -10,13 +10,14 @@ window.addEventListener('load', function(){
 var request = new XMLHttpRequest();
 
 // specify the HTTP method, URL, and asynchronous flag
-request.open('GET', 'http://www.example.com/content.json', true);
+request.open('GET', 'http://miley.djroomba.com', true);
 
 // add an event handler
 request.addEventListener('load', function(e){
     if (request.status == 200) {
         // do something with the loaded content
         var content = request.responseText;
+        console.log(content);
     } else {
         // something went wrong, check the request status
         // hint: 403 means Forbidden, maybe you forgot your username?
