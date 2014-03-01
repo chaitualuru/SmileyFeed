@@ -85,28 +85,29 @@ table {
   position: relative;
   left:30px;
   top: 355px;
-  width:27%;
+  width:25%;
 }
 
 #tweet_container {
   float: left;
   background-color: rgba(52,114,161,1);
   display: inline-block;
-  width:45%;
+  width:50%;
   position: relative;
   top: 180px;
   height: 410px;
   border: 2px solid red;
   overflow-y:auto;
+  z-index: 10;
 }
 
 #stop_container{
   position: relative;
-  right:30px;
+  right:28px;
   display: inline-block;
   text-align: center;
   top:355px;
-  width:27%;
+  width:24%;
 }
 
 #start:hover, #stop:hover{

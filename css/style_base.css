@@ -2,10 +2,6 @@
   font-family: 'bkerville';
   src: url("../fonts/new_baskerville_bt-webfont.eot") format("eot"), url("../fonts/new_baskerville_bt-webfont.woff") format("woff"), url("../fonts/new_baskerville_bt-webfont.ttf") format("truetype"); }
 
-@font-face {
-  font-family: 'ak-gro-1';
-  src: url("../fonts/bertholdakzidenzgroteskbelightextended-webfont.eot") format("eot"), url("../fonts/bertholdakzidenzgroteskbelightextended-webfont.woff") format("woff"), url("../fonts/bertholdakzidenzgroteskbelightextended-webfont.ttf") format("truetype"); }
-
 /*The general width of the layout; scrollbars will appear if window is less wide.*/
 body {
   min-width: 1040px; }
@@ -59,6 +55,7 @@ table {
 
 /* ------------------------------------------------------------------------------- */
 #header_wrapper {
+  margin-top: 10px;
   text-align: center;
   min-width: 960px;
   position: fixed;
@@ -79,27 +76,103 @@ table {
   float: left;
   position: relative;
   left: 30px;
-  top: 355px;
-  width: 27%; }
+  top: 330px;
+  width: 24%; 
+}
+
+#smiley_image {
+  z-index: -1;
+  opacity: 0.6;
+  height: 410px;
+  width: 100%;
+}
 
 #tweet_container {
+  background-image: url('../img/smiley_with_opacity.png');
+  background-size: 100% 410px;
+  margin-top: 25px;
   float: left;
-  background-color: #3472a1;
   display: inline-block;
-  width: 45%;
+  width: 50%;
   position: relative;
   top: 180px;
   height: 410px;
-  border: 2px solid red;
-  overflow-y: auto; }
+  border: 5px solid green;
+  overflow-y: auto;
+  z-index: 10; 
+  overflow-x: hidden;
+}
+
+li#tweet {
+  border-bottom: 3px solid rgba(30,30,30,0.9);
+  z-index: 10;
+  min-width:700px;
+  height: 100px;
+}
+
+#tweet:last-child {
+  border-top:none;
+}
+
+#userimage {
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#username {
+  float: left;
+  font-size: 20px;
+  margin: 0px 15px 10px 15px;
+  font-family: 'Lato', sans-serif;
+}
+
+#screenname{
+  font-size: 18px;
+}
+
+#screenname_link {
+  text-decoration: none;
+  color: rgb(86,87,82);
+}
+
+#screenname_link:hover {
+  border-bottom: 2px solid gray;
+}
+
+#username_link {
+  text-decoration: none;
+  color: rgba(255,0,0,0.8);
+}
+
+#username_link:hover {
+  border-bottom: 2px solid red;
+}
+
+#entity_link {
+  text-decoration: none;
+  color: green;
+}
+
+#entity_link:hover {
+  border-bottom: 2px solid green;
+}
+
+#text {
+  margin-left: 80px;
+  font-family: 'bkerville', 'serif';
+}
 
 #stop_container {
+  position: fixed;
   position: relative;
-  right: 30px;
+  right: 28px;
   display: inline-block;
   text-align: center;
-  top: 355px;
-  width: 27%; }
+  top: 330px;
+  width: 24%; 
+}
 
-#start:hover, #stop:hover {
-  opacity: 0.7; }
+#start:hover, #stop:hover, #clear:hover, #music:hover {
+  opacity: 0.7; 
+}
